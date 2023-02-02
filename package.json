@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve:webpack": "vue-cli-service serve",
+    "serve": "netlify dev",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -15,6 +16,7 @@
     "node-sass": "^8.0.0",
     "sass-loader": "^13.2.0",
     "vue": "^3.2.13",
+    "vue-loader": "^17.0.1",
     "vue-router": "^4.1.6",
     "vuex": "^4.1.0"
   },
@@ -24,8 +26,10 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "babel-eslint": "^10.1.0",
+    "dotenv-webpack": "^8.0.1",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "netlify-cli": "^12.10.0"
   },
   "browserslist": [
     "> 1%",

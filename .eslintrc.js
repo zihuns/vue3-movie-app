@@ -9,6 +9,9 @@ module.exports = {
 
     // vue
     "plugin:vue/vue3-strongly-recommended",
+
+    // prettier
+    'prettier',
   ],
 
   parserOptions: {
@@ -39,7 +42,7 @@ module.exports = {
     ],
     "vue/first-attribute-linebreak": ["error", {
       "singleline": "ignore",
-      "multiline": "below"
+      "multiline": "below",
     }],
     
     "vue/max-attributes-per-line": [
@@ -58,10 +61,12 @@ module.exports = {
     "vue/script-indent": ["error", 2, {
       "baseIndent": 0,
       "switchCase": 0,
-      "ignores": []
+      "ignores": [],
     }],
+  
+    "comma-dangle": ["error", "only-multiline"],
 
     // 단일단어컴포넌트 경고 해제
-    "vue/multi-word-component-names": 0
+    "vue/multi-word-component-names": 0,
   },
 };

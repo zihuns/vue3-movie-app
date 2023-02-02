@@ -2,6 +2,16 @@
 const path = require("path");
 
 module.exports = {
+  // configureWebpack: require('./webpack.config.js'), // 웹팩 설정을 별도 파일로 분리
+
+  css: {
+    loaderOptions: {
+        sass: {
+            additionalData: `@import "~/scss/main";`
+          }
+      }
+  },
+
   configureWebpack: {
 
     resolve: {
@@ -17,7 +27,7 @@ module.exports = {
     // 개발 서버 옵션
     devServer: {
       host: "localhost",
-      port: 8080,
+      port: 8079,
       hot: true,
     },
   },
